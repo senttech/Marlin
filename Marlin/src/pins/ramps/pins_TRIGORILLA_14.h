@@ -45,9 +45,15 @@
   #define X_MAX_PIN                           43
   #define Y_MIN_PIN                           19
 #endif
+#define ANYCUBIC_CHIRON_ENDSTOPS
+#if ENABLED(ANYCUBIC_CHIRON_ENDSTOPS)
+  #define Y_MIN_PIN                           42
+  #define Y_MAX_PIN                           -1
+  #define Z_MAX_PIN                           43
+#endif
 
 // Labeled pins
-#define TG_HEATER_BED_PIN                      8
+#define TG_HEATER_BED_PIN                     45
 #define TG_HEATER_0_PIN                       10
 #define TG_HEATER_1_PIN                       45  // Anycubic Kossel: Unused
 
